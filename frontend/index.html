@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Clima Agora</title>
+  <title>App de Clima</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <div class="container">
-    <h1>🌤️ Clima Agora</h1>
-    <p>Digite o nome da cidade para ver a temperatura atual</p>
+    <h1>🌤️ Clima Tempo</h1>
+    <p style="text-align:center; opacity:0.8; margin-bottom:16px;">
+      Verifique a previsão de qualquer lugar
+    </p>
 
-    <input
-      type="text"
-      id="cityInput"
-      placeholder="Ex: São Paulo"
-    />
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Digite o nome da cidade" />
 
-    <button id="searchBtn">Buscar clima</button>
+      <button id="searchBtn">Buscar</button>
+      <button id="locationBtn" aria-label="Usar minha localização">Localização Atual</button>
 
-    <div id="result"></div>
+    </div>
+
+    <div id="result" class="result"></div>
+    <div id="forecast" class="forecast"></div>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
