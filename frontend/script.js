@@ -33,7 +33,7 @@ const weatherResponse = await fetch(
 
     result.innerText = `🌡️ ${cityName || "Sua localização"}: ${temperature}°C`;
 
-    forecastDiv.innerHTML = "<h3>Próximos dias</h3>";
+    forecastDiv.innerHTML = "<h3>Próximos 3 dias</h3>";
 
 const days = weatherData.daily.time;
 const maxTemps = weatherData.daily.temperature_2m_max;
@@ -41,7 +41,7 @@ const minTemps = weatherData.daily.temperature_2m_min;
 const codes = weatherData.daily.weathercode;
 
 
-for (let i = 1; i <= 3; i++) {
+for (let i = 2; i <= 4; i++) {
   const date = new Date(days[i]);
   const weekDay = date.toLocaleDateString("pt-BR", {
     weekday: "short",
