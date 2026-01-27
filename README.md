@@ -3,8 +3,7 @@
 Aplicação simples de clima desenvolvida com Node.js + TypeScript no backend (CLI) e HTML, CSS e JavaScript no front-end.
 O projeto consome a API do Open-Meteo para buscar a temperatura atual a partir do nome da cidade informado pelo usuário.
 
-Este projeto foi desenvolvido com foco em aprendizado, organização de código e boas práticas, sendo ideal para portfólio júnior.
-
+Link: https://climatempo-api.netlify.app/)
 # 🚀 Funcionalidades
 
 Buscar clima atual por nome da cidade
